@@ -30,14 +30,26 @@ typedef struct sPenInfo
     int nPenP;  // 笔压力
 }PEN_INFO;
 
+// 数据发送
+struct sSendDataTag
+{
+	unsigned char* szData;
+	int nDataSize;
+};
+
 // 返回usb数据回调类型
-typedef void ( CALLBACK *usbDataCallBack)(const char* pUsbData, const sPenInfo& penInfo, void* context);
+typedef void ( CALLBACK *usbDataCallBack)(const unsigned char* pUsbData, const sPenInfo& penInfo, void* context);
 // 返回usb设备的插拔状态
-typedef void (*usbStatusCallBack)(int nDevstatus, void* context);
+typedef void (*usbStatusCallBack)(int nDevstatus,const char* pDeviceName, void* context);
 
 class CUsbDevInterface
 {
 public:
+
+	// 获取本机所有usb设备
+	virtual bool _getAllDevice(std::vector<USB_DEV_INFO>& vecDevice) = 0;
+	// 发送数据到设备
+	virtual bool sendDataToDevice(const sSendDataTag& sData) = 0;
 
     // ********************************************************
     // summary: 根据usb设备Pid打开指定的usb设备
@@ -89,4 +101,7 @@ extern "C" DLL_PORT_TYPE void  deleteObj(void* p);
 // _extern_CloseUsbDev函数提供关闭设备的功能
 extern "C" DLL_PORT_TYPE bool  _extern_openSpecUsbDevByPid(char* pAarryPid[], unsigned int nAarrySize, usbDataCallBack pFunc);
 extern "C" DLL_PORT_TYPE bool  _extern_CloseUsbDev();
+
+// _extern_setDevStatusHandler 设备状态回调<插入或拔出>
+extern "C" DLL_PORT_TYPE usbStatusCallBack _extern_setDevStatusHandler(usbStatusCallBack newHandler, void* pUsbDevStatusContext);
  

@@ -1,0 +1,29 @@
+﻿生成启动时间为 2017/3/13 9:25:06。
+     1>项目“E:\work\SDK_Win\SDK_Win\C++\testDemo\testDemo\testDemo.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\testDemo.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\work\SDK_Win\SDK_Win\C++\testDemo\Debug\testDemo.exe" /INCREMENTAL /NOLOGO ../Debug/usbDevModule.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\testDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\work\SDK_Win\SDK_Win\C++\testDemo\Debug\testDemo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\work\SDK_Win\SDK_Win\C++\testDemo\Debug\testDemo.lib" /MACHINE:X86 Debug\testDemo.exe.embed.manifest.res
+         Debug\stdafx.obj
+         Debug\testDemo.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\testDemo.exe.embed.manifest" /manifest Debug\testDemo.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\testDemo.exe.embed.manifest.res" Debug\testDemo_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\work\SDK_Win\SDK_Win\C++\testDemo\Debug\testDemo.exe" /INCREMENTAL /NOLOGO ../Debug/usbDevModule.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\testDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\work\SDK_Win\SDK_Win\C++\testDemo\Debug\testDemo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\work\SDK_Win\SDK_Win\C++\testDemo\Debug\testDemo.lib" /MACHINE:X86 Debug\testDemo.exe.embed.manifest.res
+         Debug\stdafx.obj
+         Debug\testDemo.obj
+         testDemo.vcxproj -> E:\work\SDK_Win\SDK_Win\C++\testDemo\Debug\testDemo.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\testDemo.unsuccessfulbuild”。
+         正在对“Debug\testDemo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\work\SDK_Win\SDK_Win\C++\testDemo\testDemo\testDemo.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.60
